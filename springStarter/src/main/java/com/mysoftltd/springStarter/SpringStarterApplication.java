@@ -6,14 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@RestController
 public class SpringStarterApplication {
+	public static void main(String[] args) {SpringApplication.run(SpringStarterApplication.class, args);}
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringStarterApplication.class, args);
-	}
-	@GetMapping("/")
-	public String hello(){
-		return "Hello World";
-	}
+
 }
